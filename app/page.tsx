@@ -1,4 +1,4 @@
-"use client"
+"use client "
 
 import { MantineProvider } from "@mantine/core"
 import Portfolio from "@/components/portfolio"
