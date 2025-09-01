@@ -82,21 +82,21 @@ export default function Portfolio() {
         "Este projeto tem como objetivo o gerenciamento de coletas seletivas de resíduos.",
       technologies: [".NET", "Docker", "CICD", "SQLServer", "Azure", "Xunit"],
       github: "https://github.com/LucasAzevedoS/CiCdDotNet",
-
+      demo: "https://demo.com",
     },
     {
       title: "CRM-Dashboard",
       description: "Dashboard de CRM para gerenciamento de clientes, vendas e relatórios.",
       technologies: [".NET", "Next.js", "TypeScript", "SQL", "N8N", "WAHAAPI", "Docker"],
-      // github: "https://github.com",
-
+      // github: "https://github.com/LucasAzevedoS/CRM-Dashboard",
+      demo: "https://demo.com",
     },
     {
       title: "E-shop",
       description: "Aplicação para controle de estoque e venda de produtos online.",
       technologies: [".NET", "Next.js", "TypeScript", "MongoDb", "Docker", "Keycloak", "Serilog", "Zustand"],
       github: "https://github.com/LucasAzevedoS/Hypesoft",
-
+      demo: "https://demo.com",
     },
   ]
 
