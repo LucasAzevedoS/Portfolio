@@ -77,10 +77,10 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-Coleta",
+      title: "Project-Layout",
       description:
-        "Este projeto tem como objetivo o gerenciamento de coletas seletivas de resíduos.",
-      technologies: [".NET", "Docker", "CICD", "SQLServer", "Azure", "Xunit"],
+        "Este projeto tem como objetivo criar um padrao para futuros projetos que serao realizados, utilizando as melhores praticas de desenvolvimento, arquitetura limpa e tecnologias modernas para garantir escalabilidade, manutenibilidade e performance.",
+      technologies: [".NET", "Docker", "CICD", "SQLServer", "Azure", "Keycloak"],
       github: "https://github.com/LucasAzevedoS/CiCdDotNet",
       demo: "https://demo.com",
     },
@@ -102,11 +102,11 @@ export default function Portfolio() {
 
   const experiences = [
     {
-      title: "Técnico de Suporte Jr",
+      title: "Técnico de Suporte Pleno",
       company: "Minsait",
       period: "2023 - Presente",
       description:
-        "Atuação como Técnico de Suporte Jr, com foco em resolução de problemas técnicos, suporte a usuários e manutenção de sistemas legados.",
+        "Atuação como Técnico de Suporte Pleno, com foco em resolução de problemas técnicos, suporte a usuários e manutenção de sistemas legados.",
     },
     {
       title: "Engenharia de Computação",
@@ -268,7 +268,7 @@ export default function Portfolio() {
                         Idade
                       </Text>
                       <Text c="dimmed" ta="center">
-                        20 anos
+                        21 anos
                       </Text>
                     </div>
                   </Stack>
