@@ -77,12 +77,11 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Project-Layout",
+      title: "POSE",
       description:
-        "Este projeto tem como objetivo criar um padrao para futuros projetos que serao realizados, utilizando as melhores praticas de desenvolvimento, arquitetura limpa e tecnologias modernas para garantir escalabilidade, manutenibilidade e performance.",
-      technologies: [".NET", "Docker", "CICD", "SQLServer", "Azure", "Keycloak"],
-      github: "https://github.com/LucasAzevedoS/CiCdDotNet",
-      demo: "https://demo.com",
+        "SaaS voltado para fotógrafos gerenciarem clientes, ensaios e obterem controle total de sua operação.",
+      technologies: ["SaaS", "Next.js", "TypeScript", ".NET", "Docker"],
+      demo: "https://pose.app.br",
     },
     {
       title: "CRM-Dashboard",
@@ -102,9 +101,16 @@ export default function Portfolio() {
 
   const experiences = [
     {
+      title: "Analista de desenvolvimento jr",
+      company: "RTC Tecnologia",
+      period: "2026 - Presente",
+      description:
+        "Atuação no desenvolvimento e manutenção de aplicações corporativas, participando da implementação de novas funcionalidades, correção de incidentes e evolução de sistemas legados",
+    },
+    {
       title: "Técnico de Suporte Pleno",
       company: "Minsait",
-      period: "2023 - Presente",
+      period: "2026 - jun 2026",
       description:
         "Atuação como Técnico de Suporte Pleno, com foco em resolução de problemas técnicos, suporte a usuários e manutenção de sistemas legados.",
     },
@@ -114,6 +120,14 @@ export default function Portfolio() {
       period: "2025 - 2030",
       description: "Formação em Engenharia de Computação com foco em desenvolvimento de software, inteligência artificial e sistemas embarcados.",
     },
+    {
+      title: "Técnico de Suporte Jr",
+      company: "Minsait",
+      period: "2023 - 2025",
+      description:
+        "Atuação como Técnico de Suporte Jr, com foco em resolução de problemas técnicos, suporte a usuários e manutenção de sistemas legados.",
+    },
+
     {
       title: "Estudante de Análise e Desenvolvimento de Sistemas",
       company: "Fiap",
@@ -209,7 +223,7 @@ export default function Portfolio() {
                     </Title>
                   </div>
                   <Text size="lg" c="dimmed" maw={600}>
-                    Desenvolvedor apaixonado por criar soluções digitais inovadoras. Especializado em C#, .NET, Next.js, TypeScript e
+                    Desenvolvendo soluções digitais inovadoras. Especializado em C#, .NET, Next.js, TypeScript e
                     tecnologias modernas de desenvolvimento web e Devops.
                   </Text>
                   <Group>
@@ -290,10 +304,10 @@ export default function Portfolio() {
               </SimpleGrid>
 
               <Text size="lg" ta="center" maw={900} mx="auto">
-                Sou apaixonado por tecnologia e sempre busco aprender novas ferramentas e metodologias. Tenho
-                experiência sólida em desenvolvimento frontend e backend, com foco em criar experiências de usuário
-                excepcionais e sistemas robustos. Quando não estou codando, gosto de contribuir com projetos open source
-                e compartilhar conhecimento com a comunidade.
+                Trabalho com desenvolvimento frontend e backend, 
+                buscando sempre construir sistemas robustos e boas experiências de usuário. 
+                Gosto de me manter atualizado, testando novas ferramentas e formas de trabalhar. 
+                Nas horas livres, curto contribuir com projetos e compartilhar o que aprendo com a comunidade.
               </Text>
             </Stack>
           </Container>
@@ -332,18 +346,22 @@ export default function Portfolio() {
                         ))}
                       </Group>
                       <Group justify="space-between" mt="auto">
-                        <Anchor href={project.github} target="_blank">
-                          <Group gap="xs">
-                            <IconBrandGithub size={16} />
-                            <Text size="sm">GitHub</Text>
-                          </Group>
-                        </Anchor>
-                        <Anchor href={project.demo} target="_blank">
-                          <Group gap="xs">
-                            <IconExternalLink size={16} />
-                            <Text size="sm">Demo</Text>
-                          </Group>
-                        </Anchor>
+                        {project.github ? (
+                          <Anchor href={project.github} target="_blank">
+                            <Group gap="xs">
+                              <IconBrandGithub size={16} />
+                              <Text size="sm">GitHub</Text>
+                            </Group>
+                          </Anchor>
+                        ) : <div />}
+                        {project.demo && (
+                          <Anchor href={project.demo} target="_blank">
+                            <Group gap="xs">
+                              <IconExternalLink size={16} />
+                              <Text size="sm">Acessar</Text>
+                            </Group>
+                          </Anchor>
+                        )}
                       </Group>
                     </Stack>
                   </Card>
