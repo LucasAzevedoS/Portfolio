@@ -88,7 +88,7 @@ export default function Portfolio() {
       description: "Dashboard de CRM para gerenciamento de clientes, vendas e relatórios.",
       technologies: [".NET", "Next.js", "TypeScript", "SQL", "N8N", "WAHAAPI", "Docker"],
       // github: "https://github.com/LucasAzevedoS/CRM-Dashboard",
-      demo: "https://demo.com",
+      demo: "*",
     },
     {
       title: "E-shop",
